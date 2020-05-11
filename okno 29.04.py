@@ -1,9 +1,8 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QAction, QInputDialog,QLineEdit,QFileDialog, QLabel, QScrollArea
 from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow, QPushButton
-import sys
-import math
-import numpy as np
+
+
 
 class Ui_MainWindow(object):
 
@@ -70,7 +69,7 @@ class Ui_MainWindow(object):
         self.label_masa.setGeometry(QtCore.QRect(10, 20, 91, 16))
         self.label_masa.setObjectName("label_masa")
 
-#okno do wpisywania masa
+#okno do wpisywania wsp
         self.textedit_masa = QtWidgets.QTextEdit(self.groupBox_masa)
         self.textedit_masa.setGeometry(QtCore.QRect(10, 40, 101, 31))
         self.textedit_masa.setObjectName("textedit_masa")
@@ -123,7 +122,7 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.menuFile.menuAction())
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
-     
+
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Program Matematyczny"))
@@ -142,34 +141,40 @@ class Ui_MainWindow(object):
         self.actionSave.setText(_translate("MainWindow", "Zapisz"))
         self.actionSave.setShortcut(_translate("MainWindow", "Ctrl+S"))
     
-    def zmiana_masa(self):
-        new_value= self.textedit_masa.toPlainText()
-        
-        print("new_value_masa", new_value)
-        print("self.textedit_wsp_value", self.textedit_wsp_value)
-        
-        new_value = new_value.replace(",", ".")
-        if len(new_value) == 0 :
-                
+    def zmiana(self, state,):
+        new_value = self.textedit_wsp.toPlainText()
 
+        print("new_value", new_value)
+        print("self.textedit_wsp_value", self.textedit_wsp_value)
+        new_value = new_value.replace(",", ".")    
+        if len(new_value) == 0:
+                self.textedit_wsp.setPlainText("0")
+                self.textedit_wsp_value = 0
+        else:
+
+                try:
+                        new_value = float(new_value)
+                        self.textedit_wsp_value = new_value
+                except:
+                        new_value = self.textedit_wsp_value
+                        self.textedit_wsp.setPlainText(str(new_value))
 
     def zmiana_wsp(self):
         new_value = self.textedit_wsp.toPlainText()
 
-        print("new_value_wsp", new_value)
+        print("new_value", new_value)
         print("self.textedit_wsp_value", self.textedit_wsp_value)
 
         new_value = new_value.replace(",", ".")
         
         if len(new_value) == 0:
                 self.textedit_wsp.setPlainText("0")
-
+                self.textedit_wsp_value = 0
         else:
 
                 try:
                         new_value = float(new_value)
-                        if (new_value > 0) and (new_value < 1):
-                                self.textedit_wsp_value = new_value
+                        self.textedit_wsp_value = new_value
                 except:
                         new_value = self.textedit_wsp_value
                         self.textedit_wsp.setPlainText(str(new_value))
@@ -182,11 +187,6 @@ class Ui_MainWindow(object):
                 print('Unchecked')
                 box.setDisabled(1)
     
-    def kalkulator(self):
-            float(textedit_wsp_value) = masa
-
-
-
     def close_app(self):
         sys.exit()
 
