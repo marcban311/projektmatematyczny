@@ -21,8 +21,13 @@ class Ui_MainWindow(object):
 #checkbox masa
         self.checkBox_masa = QtWidgets.QCheckBox(self.centralwidget)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         self.checkBox_masa.setGeometry(QtCore.QRect(130, 40, 111, 16))
 =======
+        self.checkBox_masa.setGeometry(QtCore.QRect(150, 70, 111, 16))
+>>>>>>> Stashed changes
+=======
+        self.checkBox_masa.setGeometry(QtCore.QRect(130, 40, 111, 16))
         self.checkBox_masa.setGeometry(QtCore.QRect(150, 70, 111, 16))
 >>>>>>> Stashed changes
         self.checkBox_masa.setObjectName("checkBox_masa")
@@ -32,8 +37,13 @@ class Ui_MainWindow(object):
 #checkbox wsp
         self.checkBox_wsp = QtWidgets.QCheckBox(self.centralwidget)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         self.checkBox_wsp.setGeometry(QtCore.QRect(10, 40, 111, 16))
 =======
+        self.checkBox_wsp.setGeometry(QtCore.QRect(10, 70, 111, 16))
+>>>>>>> Stashed changes
+=======
+        self.checkBox_wsp.setGeometry(QtCore.QRect(10, 40, 111, 16))
         self.checkBox_wsp.setGeometry(QtCore.QRect(10, 70, 111, 16))
 >>>>>>> Stashed changes
         self.checkBox_wsp.setObjectName("checkBox_wsp")
@@ -44,8 +54,13 @@ class Ui_MainWindow(object):
 #checkbox  kąt     
         self.checkBox_kat = QtWidgets.QCheckBox(self.centralwidget)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         self.checkBox_kat.setGeometry(QtCore.QRect(250, 40, 111, 16))
 =======
+        self.checkBox_kat.setGeometry(QtCore.QRect(290, 70, 111, 16))
+>>>>>>> Stashed changes
+=======
+        self.checkBox_kat.setGeometry(QtCore.QRect(250, 40, 111, 16))
         self.checkBox_kat.setGeometry(QtCore.QRect(290, 70, 111, 16))
 >>>>>>> Stashed changes
         self.checkBox_kat.setObjectName("checkBox_kat")
@@ -65,18 +80,27 @@ class Ui_MainWindow(object):
    
 #okno do wpisywania wsp
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
         self.textedit_wsp = QtWidgets.QTextEdit(self.groupBox_wsp)
         self.textedit_wsp.setGeometry(QtCore.QRect(10, 40, 111, 31))
         self.textedit_wsp.setObjectName("textedit_wsp")
         self.textedit_wsp.textChanged.connect(self.zmiana_wsp)
         self.textedit_wsp_value = 0
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         self.textedit_wsp = QtWidgets.QDoubleSpinBox(self.groupBox_wsp)
         self.textedit_wsp.setGeometry(QtCore.QRect(10, 40, 101, 31))
         self.textedit_wsp.setObjectName("wsp")
         self.textedit_wsp.setRange(0,1)
         self.textedit_wsp.setSingleStep(0.01)
         
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 #groupbox i lebel masa
@@ -91,11 +115,17 @@ class Ui_MainWindow(object):
         self.label_masa.setObjectName("label_masa")
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 #okno do wpisywania wsp
         self.textedit_masa = QtWidgets.QTextEdit(self.groupBox_masa)
         self.textedit_masa.setGeometry(QtCore.QRect(10, 40, 101, 31))
         self.textedit_masa.setObjectName("textedit_masa")
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 #okno do wpisywania masa
        
         self.textedit_masa = QtWidgets.QDoubleSpinBox(self.groupBox_masa)
@@ -104,8 +134,13 @@ class Ui_MainWindow(object):
         self.textedit_masa.setMinimum(0)
         self.textedit_masa.setSingleStep(1)
         self.textedit_masa.setSuffix(' kg')
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 
+=======
+        
+        
+>>>>>>> Stashed changes
 #groupbox i lebel kąt 
         self.groupBox_kat = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox_kat.setGeometry(QtCore.QRect(290, 90, 131, 91))
@@ -119,6 +154,9 @@ class Ui_MainWindow(object):
 
 #okno do wpisywania kąta
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
         self.textedit_kat = QtWidgets.QTextEdit(self.groupBox_kat)
         self.textedit_kat.setGeometry(QtCore.QRect(10, 40, 101, 31))
         self.textedit_kat.setObjectName("textedit_kat")
@@ -127,7 +165,10 @@ class Ui_MainWindow(object):
 # oknowyświetlające wynik
         self.Label_wynikft = QtWidgets.QLabel(self.centralwidget)
         self.Label_wynikft.setGeometry(QtCore.QRect(10, 190, 411, 21))
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
        
         self.textedit_kat = QtWidgets.QDoubleSpinBox(self.groupBox_kat)
         self.textedit_kat.setGeometry(QtCore.QRect(10, 40, 101, 31))
@@ -155,8 +196,13 @@ class Ui_MainWindow(object):
 # oknowyświetlające wynik
         self.Label_wynikft = QtWidgets.QLabel(self.centralwidget)
         self.Label_wynikft.setGeometry(QtCore.QRect(10, 240, 411, 21))
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
         self.Label_wynikft.setObjectName("Label_wynikft")
+=======
+        self.Label_wynikft.setObjectName("Label_wynikft")
+        
+>>>>>>> Stashed changes
 
         
         MainWindow.setCentralWidget(self.centralwidget)
@@ -194,12 +240,19 @@ class Ui_MainWindow(object):
         self.checkBox_kat.setText(_translate("MainWindow", "kąt nachylenia "))
         self.label_wsp.setText(_translate("MainWindow", "Wsp. tarcia"))
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
         self.Label_dokładnosc_wyniku.setText(_translate("MainWindow", "Ilość miejsc po przecinku"))
 >>>>>>> Stashed changes
         self.label_masa.setText(_translate("MainWindow", "Masa obiektu w kg"))
         self.label_kat.setText(_translate("MainWindow", "Kąt nachylenia "))
         self.Label_wynikft.setText(_translate("MainWindow", "TextLabel"))
+=======
+        self.Label_dokładnosc_wyniku.setText(_translate("MainWindow", "Ilość miejsc po przecinku"))
+        self.label_masa.setText(_translate("MainWindow", "Masa obiektu w kg"))
+        self.label_kat.setText(_translate("MainWindow", "Kąt nachylenia "))
+        self.Label_wynikft.setText(_translate("MainWindow", "Siła tarcia wynosi "))
+>>>>>>> Stashed changes
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.actionExit.setText(_translate("MainWindow", "Zamknij"))
         self.actionExit.setStatusTip(_translate("MainWindow", "Zamyka program"))
@@ -207,6 +260,9 @@ class Ui_MainWindow(object):
         self.actionSave.setText(_translate("MainWindow", "Zapisz"))
         self.actionSave.setShortcut(_translate("MainWindow", "Ctrl+S"))
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
     
     def zmiana(self, state,):
         new_value = self.textedit_wsp.toPlainText()
@@ -245,6 +301,9 @@ class Ui_MainWindow(object):
                 except:
                         new_value = self.textedit_wsp_value
                         self.textedit_wsp.setPlainText(str(new_value))
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
@@ -255,6 +314,7 @@ class Ui_MainWindow(object):
         else:
                 print('Unchecked')
                 box.setDisabled(1)
+<<<<<<< Updated upstream
     
     def close_app(self):
         sys.exit()
@@ -270,6 +330,26 @@ class Ui_MainWindow(object):
       #  calfa = math.cos(a2)
 >>>>>>> Stashed changes
 
+=======
+                 
+    def close_app(self):
+        sys.exit()
+    
+    def kalkulator(self):
+
+        masa = self.textedit_masa.value()
+        wsp = self.textedit_wsp.value()
+        kat = self.textedit_kat.value()
+        i= self.groupBox_dokładnosc_wyniku.value()
+
+        a2= kat*math.pi/180
+        calfa = math.cos(a2)
+        g=9.8066544682
+        g1 = round(g,i)
+        ft=(calfa*masa*g1*wsp)
+        ft1= round(ft,i)
+        print(ft1)
+>>>>>>> Stashed changes
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
